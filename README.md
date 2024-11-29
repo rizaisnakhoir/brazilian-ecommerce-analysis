@@ -1,6 +1,8 @@
-# Olist E-commerce Dashboard
+# Olist E-commerce Dashboard and Analysis
 
-This project is an interactive dashboard for visualizing and analyzing e-commerce data from Olist. The dashboard is built using Streamlit, Pandas, Matplotlib, and Seaborn.
+![olist dashboard preview](assets/dashboard.gif)
+
+This project is about creating an interactive dashboard and analysis tool to visualize and analyze e-commerce data from Olist. The dashboard offers insights into key areas of e-commerce performance, like transaction trends, customer segmentation, and delivery analysis. The project is structured with a main dashboard application using Streamlit, several datasets, and a Jupyter notebook for deeper exploration and analysis. Users can easily interact with the dashboard to uncover valuable insights from the e-commerce data, making it a powerful tool for data-driven decision-making. Let me know if you need any further adjustments!
 
 ## Project Structure
 
