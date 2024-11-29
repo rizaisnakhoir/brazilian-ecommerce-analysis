@@ -9,7 +9,7 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 base_dir = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.join(base_dir, 'main_data.csv')
-dataset = pd.read_csv('Dashboard/main_data.csv', parse_dates=['order_purchase_timestamp', 'order_delivered_customer_date', 'order_delivered_carrier_date', 'order_approved_at', 'order_estimated_delivery_date'])
+dataset = pd.read_csv('dashboard/main_data.csv', parse_dates=['order_purchase_timestamp', 'order_delivered_customer_date', 'order_delivered_carrier_date', 'order_approved_at', 'order_estimated_delivery_date'])
 dataset = pd.read_csv(data_path, parse_dates=['order_purchase_timestamp', 'order_delivered_customer_date', 'order_delivered_carrier_date', 'order_approved_at'])
 
 def create_daily_orders_df(df):
