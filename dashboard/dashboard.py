@@ -78,7 +78,7 @@ elif options == 'Transaction Details':
   st.subheader('Transactions by Hour')
   dataset['order_hour'] = dataset['order_purchase_timestamp'].dt.hour
   plt.figure(figsize=(12, 6))
-  sns.countplot(data=dataset, x='order_hour', palette='viridis')
+  sns.countplot(data=dataset, x='order_hour', color='orange')
   plt.title('Number of Transactions by Hour')
   plt.xlabel('Hour of the Day')
   plt.ylabel('Number of Transactions')
@@ -87,7 +87,7 @@ elif options == 'Transaction Details':
   st.subheader('Transactions by Day of the Week')
   dataset['order_day_of_week'] = dataset['order_purchase_timestamp'].dt.day_name()
   plt.figure(figsize=(8, 6))
-  sns.countplot(data=dataset, x='order_day_of_week', order=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], palette='viridis')
+  sns.countplot(data=dataset, x='order_day_of_week', order=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], color='orange')
   plt.title('Number of Transactions by Day of the Week')
   plt.xlabel('Day of the Week')
   plt.ylabel('Number of Transactions')
@@ -147,7 +147,7 @@ elif options == 'Customer Segmentation':
     x="customer_id",
     y="customer_segment",
     data=customer_segment_df.sort_values(by="customer_segment", ascending=False),
-    palette='viridis'
+    color='orange'
   )
   plt.title("Number of Customer for Each Segment", loc="center", fontsize=15)
   plt.ylabel(None)
@@ -208,7 +208,7 @@ elif options == 'Delivery Analysis':
   st.subheader('Average Delivery Time by State')
   avg_delivery_time_by_seller_state = dataset.groupby('seller_state')['delivery_time'].mean().sort_values()
   plt.figure(figsize=(12, 6))
-  sns.barplot(x=avg_delivery_time_by_seller_state.index, y=avg_delivery_time_by_seller_state.values, palette='viridis')
+  sns.barplot(x=avg_delivery_time_by_seller_state.index, y=avg_delivery_time_by_seller_state.values, color='orange')
   plt.xticks(rotation=45, ha='right')
   plt.title('Average Delivery Time by Seller State')
   plt.xlabel('Seller State')
