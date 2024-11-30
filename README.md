@@ -2,7 +2,7 @@
 
 ![olist dashboard preview](https://github.com/rizaisnakhoir/brazilian-ecommerce-analysis/blob/main/assets/dashboard.gif?raw=true)
 
-This project is about creating an interactive dashboard and analysis tool to visualize and analyze e-commerce data from Olist. The dashboard offers insights into key areas of e-commerce performance, like transaction trends, customer segmentation, and delivery analysis. The project is structured with a main dashboard application using Streamlit, several datasets, and a Jupyter notebook for deeper exploration and analysis.
+This project involves analyzing e-commerce data from Olist to uncover insights into transaction trends, customer segmentation, and delivery performance. The analysis is conducted using a Jupyter Notebook, where extensive visualizations and in-depth exploration highlight key findings. Additionally, a Streamlit dashboard is deployed to present these insights interactively, enabling users to explore the data dynamically and make informed decisions.
 
 ## Project Structure
 
